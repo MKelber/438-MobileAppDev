@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MasonKelber_Lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="504-eF-2RI">
+                                <rect key="frame" x="322" y="729" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Black" image="black-circle-fade-png-4"/>
+                                <connections>
+                                    <action selector="BlackPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="JR8-lI-9LE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxF-u8-gIj">
+                                <rect key="frame" x="16" y="729" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Red" image="red"/>
+                                <connections>
+                                    <action selector="RedPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="beE-pK-ofW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4f-YZ-UA6">
+                                <rect key="frame" x="64" y="729" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Orange" image="orange"/>
+                                <connections>
+                                    <action selector="OrangePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="yT5-rr-6Gb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3q-6M-SZ7">
+                                <rect key="frame" x="172" y="729" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Green" image="green"/>
+                                <connections>
+                                    <action selector="GreenPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="TWs-Xe-VUV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUV-Qr-zBh">
+                                <rect key="frame" x="268" y="729" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Purple" image="purple"/>
+                                <connections>
+                                    <action selector="PurplePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nf4-2t-s0J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPs-mx-1Hs">
+                                <rect key="frame" x="34" y="44" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGp-7x-U60"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="az2-xR-yoS">
+                                <rect key="frame" x="322" y="44" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Undo"/>
+                                <connections>
+                                    <action selector="undoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P4A-DN-mcA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lp-jH-z01">
+                                <rect key="frame" x="220" y="729" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Blue" image="blue"/>
+                                <connections>
+                                    <action selector="BluePressed:" destination="BYZ-38-t0r" eventType="touchDown" id="oCv-BT-wsb"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9gS-KG-pgl" customClass="DrawingView" customModule="MasonKelber_Lab3" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="82" width="375" height="607"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGr-2e-Bur">
+                                <rect key="frame" x="112" y="723" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Yellow" image="yellow-1"/>
+                                <connections>
+                                    <action selector="YellowPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="pr4-xe-JZh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-t3-FPz">
+                                <rect key="frame" x="78" y="37" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pen" image="pen"/>
+                                <connections>
+                                    <action selector="penOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E9F-Fd-7bP"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JpY-O3-OmC">
+                                <rect key="frame" x="129" y="43" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="XST-yT-8RR"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myi-Xv-XPY">
+                                <rect key="frame" x="148" y="691" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save Drawing"/>
+                                <connections>
+                                    <action selector="savePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5e4-AS-cJp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vr7-39-QkE">
+                                <rect key="frame" x="268" y="37" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Marker" image="marker"/>
+                                <connections>
+                                    <action selector="MarkerOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uN4-cY-pYN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="black" destination="504-eF-2RI" id="14J-me-BEz"/>
+                        <outlet property="blue" destination="0Lp-jH-z01" id="Xrg-KC-XNr"/>
+                        <outlet property="canvas" destination="9gS-KG-pgl" id="Qkv-RE-pL4"/>
+                        <outlet property="clear" destination="pPs-mx-1Hs" id="DdI-PZ-f3p"/>
+                        <outlet property="green" destination="b3q-6M-SZ7" id="OES-RF-D46"/>
+                        <outlet property="marker" destination="Vr7-39-QkE" id="y5k-Lz-97R"/>
+                        <outlet property="orange" destination="D4f-YZ-UA6" id="rqh-Xy-QZ8"/>
+                        <outlet property="pen" destination="mjc-t3-FPz" id="Qne-ae-cQk"/>
+                        <outlet property="purple" destination="XUV-Qr-zBh" id="vc9-GM-8LT"/>
+                        <outlet property="red" destination="mxF-u8-gIj" id="uRw-aV-ddl"/>
+                        <outlet property="undo" destination="az2-xR-yoS" id="D6C-wQ-Bwj"/>
+                        <outlet property="widthSlider" destination="JpY-O3-OmC" id="RA8-Bs-CIh"/>
+                        <outlet property="yellow" destination="xGr-2e-Bur" id="8Fz-EC-Pfe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="128.57142857142858"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="black-circle-fade-png-4" width="490" height="490"/>
+        <image name="blue" width="512" height="512"/>
+        <image name="green" width="300" height="290.5"/>
+        <image name="marker" width="189" height="296.5"/>
+        <image name="orange" width="479" height="478.5"/>
+        <image name="pen" width="256" height="256"/>
+        <image name="purple" width="224" height="225"/>
+        <image name="red" width="249.5" height="249"/>
+        <image name="yellow-1" width="203" height="206"/>
+    </resources>
+</document>
